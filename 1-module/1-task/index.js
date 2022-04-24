@@ -1,3 +1,12 @@
 function factorial(n) {
-  // ваш код...
+ let outcome=1;
+ 
+
+ while(n) {
+  outcome *=n--;
+}
+return outcome;
+
+
+
 }
