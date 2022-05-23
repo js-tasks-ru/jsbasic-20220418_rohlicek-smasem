@@ -9,25 +9,25 @@ function print(text) {
  * Эту функцию нужно поменять так,
  * чтобы функция sayHello работала корректно
  */
-function isValid(name) {
- if (name==null) {
-   return false;
- }
- else {
-   let Spaces = name.replace (' ', '');
-   if (name.length > Spaces.length) {
-     return false;
-   } 
-   else {
-     if (name.length < 4) {
-        return false;
+ function isValid(name) {
+  if (name==null) {
+    return false;
+  }
+  else {
+    let Spaces = name.replace (' ', '');
+    if (name.length > Spaces.length) {
+      return false;
+    } 
+    else {
+      if (name.length < 4) {
+         return false;
+       }
+      else {
+        return true;
       }
-     else {
-       return true;
-     }
-   }
+    }
+  }
  }
-}
 
 function sayHello() {
   let userName = prompt('Введите ваше имя');
